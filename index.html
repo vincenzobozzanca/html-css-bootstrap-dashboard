@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap-dashbord</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
+	
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+	integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+    />
 	<style>
 		.navbar-toggler-icon {
 		  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -42,12 +49,165 @@
 
 	<div class="container text-center">
 		<div class="row mt-2">
-		  <div class="col ">
+		  <div class="col text-start">
 				<h1>Catalogo libri</h1>
 		  </div>
 		  <div class="col">
 				<button class="btn btn-primary">Aggiungi libro</button>
 		  </div>
+		</div>
+	</div>
+	
+	<table class="table table-striped table-sm my-5">
+			<thead>
+			  <tr>
+				<th scope="col">Titolo</th>
+				<th scope="col" class="d-none d-md-inline-block">Data prestito</th>
+				<th scope="col">Stato</th>
+				<th scope="col">Azioni</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<th scope="row" class="fw-normal">I pilastri della terra</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">I promessi sposi</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Il signore degli anelli</th>
+				<td class="d-none d-md-block">18/10/2023</td>
+				<td>
+				  <span class="bg-warning rounded text-white">In prestito</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">
+				  Harry Potter e la pietra filosofale
+				</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Il codice Da Vinci</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-danger rounded text-white text-nowrap">Non disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Shining</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+				
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">La divina commedia</th>
+				<td class="d-none d-md-block">21/09/2023</td>
+				<td>
+				  <span class="bg-warning rounded text-white">In prestito</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Il trono di spade</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Il mondo di Sofia</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-danger rounded text-white">Non disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">
+				  Le cronache di Narnia: il leone, la strega e l'armadio
+				</th>
+				<td class="d-none d-md-block">25/07/2023</td>
+				<td>
+				  <span class="bg-warning rounded text-white">In prestito</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">Il piccolo principe</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			  <tr>
+				<th scope="row" class="fw-normal">La storia infinita</th>
+				<td class="d-none d-md-block">-</td>
+				<td>
+				  <span class="bg-success rounded text-white">Disponibile</span>
+				</td>
+				<td class="text-body-secondary text-nowrap">
+				  <i class="fa-solid fa-pencil border border-secondary p-1"></i>
+				  <i class="fa-solid fa-trash border border-secondary p-1"></i>
+				</td>
+			  </tr>
+			</tbody>
+		  
+		</table>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
